@@ -196,7 +196,7 @@
        "call"
     ],
     "responses": [
-       "You can contact at: 07--"
+       "You can contact at: 0798400005"
     ],
     "extension":  {
         "function": "",
@@ -354,7 +354,7 @@
        "distance between hostel and college"
     ],
     "responses": [
-       "For hostel detail visit <a href=\"ADD YOUR HOSTEL DETAIL PDF LINK OR ANY INFORMATION LINK OR ADD YOU OWN ANSWERS\"> here</a>"
+       "Dedan Kimathi University of Technology has limited on-campus accommodation for its large student population, with a small number of available spaces for male and female students. Students can also find external accommodation in various hostels and estates located in the university's neighborhood, Nyeri town, Nyeri View Estate,Kahawa Estate and the Embassy residential sector. "
     ],
     "extension":  {
         "function": "",
@@ -385,7 +385,7 @@
        "what about events"
     ],
     "responses": [
-       "For event detail visit <a target=\"_blank\" href=\"ADD YOUR FUNCTIONS LINK OR YOUR OWN RESPONSE\"> here</a>"
+       "For updates and details about school events, please regularly check your student email and the WhatsApp groups for your academic year."
     ],
     "extension":  {
         "function": "",
@@ -418,7 +418,7 @@
        "documents needed"
     ],
     "responses": [
-       "To know more about document required visit <a  href=\"https://www.dkut.ac.ke/index.php/admission-materials\"> here</a>"
+       "To know more about document required visit <a  href=\"https://www.dkut.ac.ke/index.php/admission-materials\"> here</a> Kindly download the relevant document for either the Postgraduate Diploma or Undergraduate program, depending on your enrollment"
     ],
     "extension":  {
         "function": "",
@@ -441,11 +441,10 @@
        "How many floors does college have",
        "floors in college",
        "floors in college",
-       "how tall is UNI's College of Engineering college building",
        "floors"
     ],
     "responses": [
-       "My College has total 2 floors "
+       "It is located 6 km from Nyeri along the Nyeri – Mweiga highway. The college land spans about 1,000 acres (4.0 km2) consisting of 350 acres (1.4 km2) of natural forest, 350 acres (1.4 km2) of mature coffee and 300 acres (1.2 km2) of open space for expansion"
     ],
     "extension":  {
         "function": "",
@@ -463,16 +462,15 @@
   {
     "intent": "syllabus",
     "text": [
-       "Syllabus for IT",
-       "what is the Information Technology syllabus",
+     
        "syllabus",
        "timetable",
-       "what is IT syllabus",
+       "what is the  syllabus",
        "syllabus",
        "What is next lecture"
     ],
     "responses": [
-       "Timetable provide direct to the students OR To know about syllabus visit <a target=\"_blank\" href=\"TIMETABLE LINK\"> here</a>"
+       "Timetable is provided direct to the students through their academic year whatsapp groups and student email."
     ],
     "extension":  {
         "function": "",
@@ -506,7 +504,7 @@
        "how many libraries"
     ],
     "responses": [
-       "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+       "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"https://www.dkut.ac.ke/library/#gsc.tab=0\">here</a>"
     ],
     "extension":  {
         "function": "",
@@ -529,7 +527,7 @@
        "college infrastructure"
     ],
     "responses": [
-       "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+       "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection,"
     ],
     "extension":  {
         "function": "",
@@ -560,7 +558,7 @@
        "Cafetaria"
     ],
     "responses": [
-       "Our university has canteen with variety of food available"
+       "Our university has student mess facilities offering a variety of food. You can follow this site to view the available menu in both the upper and lower mess,<a target=\"https://catering.dkut.ac.ke/\">here</a> "
     ],
     "extension":  {
         "function": "",
@@ -587,7 +585,7 @@
        "What is there to eat?"
     ],
     "responses": [
-       "we serve chapati ,chai ,rice and many more on menu"
+       "Hey you can follow this site to view the available menu in both the upper and lower mess,<a target=\"https://catering.dkut.ac.ke/\">here</a>"
     ],
     "extension":  {
         "function": "",
@@ -640,7 +638,7 @@
        "name of it hod"
     ],
     "responses": [
-       "All departments have only one hod XYZ who available on (Place name)"
+       "All departments have only one HOD"
     ],
     "extension":  {
         "function": "",
@@ -664,7 +662,7 @@
        "name of computer hod"
     ],
     "responses": [
-       "All departments have only one hod XYZ who available on (PLACE NAME)"
+       "All departments have only one HOD"
     ],
     "extension":  {
         "function": "",
@@ -715,7 +713,7 @@
        "name of vice Chancelor,"
     ],
     "responses": [
-       "Prof. Eng. Peter N. Muchiri is Vice Chancellor at Dedan kimathi University Of Technology."
+       "Prof. Eng. Peter N. Muchiri is Vice Chancellor of Dedan kimathi University Of Technology."
     ],
     "extension":  {
         "function": "",
@@ -843,7 +841,7 @@
        "facilities provided"
     ],
     "responses": [
-       "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+       "Our university has deiiferent department faculties "
     ],
     "extension":  {
         "function": "",
@@ -872,7 +870,7 @@
        "seats"
     ],
     "responses": [
-       "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+       "For the maximum number of students that can be taken please contact the school administrative office 072002456"
     ],
     "extension":  {
         "function": "",
@@ -901,7 +899,7 @@
        "do we have to wear uniform"
     ],
     "responses": [
-       "ENTER YOUR OWN UNIVERSITY UNIFORM CIRCULER"
+       "There is no formal dress code at the school, but dressing neatly is expected."
     ],
     "extension":  {
         "function": "",
@@ -927,7 +925,7 @@
        "how many committee are there in college"
     ],
     "responses": [
-       "For the various committe in college contact this number: ADD NUMBER"
+       "For the various committe in college contact this number 07984050000"
     ],
     "extension":  {
         "function": "",
@@ -1012,7 +1010,7 @@
        "how long will be the vacation"
     ],
     "responses": [
-       "Academic calender is given to you by your class-soordinators after you join your respective classes"
+       "Academic calender is given to you by your class representatives  after you join your respective classes and whatsapp groups"
     ],
     "extension":  {
         "function": "",
@@ -1099,8 +1097,7 @@
        "why i should use you"
     ],
     "responses": [
-       "I can answer to low-intermediate questions regarding college",
-       "You can ask me questions regarding college, and i will try to answer them"
+       "You can ask me questions regarding Dedan kimathi University of Technology , and i will try to answer them"
     ],
     "extension":  {
         "function": "",
@@ -1153,7 +1150,7 @@
        "who is the hod"
     ],
     "responses": [
-       "HODs differ for each branch, please be more specific like: (HOD it)"
+       "HODs differ for each Department, please be more specific like: (HOD it)"
     ],
     "extension":  {
         "function": "",
@@ -1167,33 +1164,7 @@
     },
     "entityType": "NA",
     "entities": []
-   },
-   {
-    "intent": "Mess Timetable",
-    "text": [
-       "Mess TimeTable",
-       "what is the Mess Table",
-       "Bus Timetable",
-       "timetable",
-       "what is the timetable",
-       "what is the bus timetable",
-       "Academic Calander"
-    ],
-    "responses": [
-       "Timetable Link visit <a target=\"_blank\" href=\"https://lightningmcqueen-95.github.io/collage/index.html\"> here</a>"
-    ],
-    "extension":  {
-        "function": "",
-        "entities": false,
-        "responses": []
-    },
-    "context":  {
-        "in": "",
-        "out": "MessQueries",
-        "clear": true
-    },
-    "entityType": "NA",
-    "entities": []
- }
+   }
+
  ]
  }
