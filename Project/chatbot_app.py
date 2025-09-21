@@ -43,4 +43,4 @@ user_input = st.text_input("You:", "")
 
 if user_input:
     response = get_bot_response(user_input)
-    st.markdown(f"**Bot 🤖:** {response}")
+    st.markdown(f"**Bot 🤖:** {response}",unsafe_allow_html=True)
