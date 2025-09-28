@@ -59,46 +59,83 @@ with open("intents.json", "r") as file:
 # Prepare data
 all_phrases = []
 all_intents = []
+responses_map = {}
 
 for intent in intents_data["intents"]:
     for phrase in intent["text"]:
         all_phrases.append(phrase)
         all_intents.append(intent["intent"])
+    responses_map[intent["intent"]] = intent["responses"]
 
 # Vectorize user inputs
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(all_phrases)
 
 # Chatbot logic
-def get_bot_response(user_input, history):
+def get_bot_response(user_input):
     user_vec = vectorizer.transform([user_input])
     similarities = cosine_similarity(user_vec, X)
     best_match_index = similarities.argmax()
     matched_intent = all_intents[best_match_index]
     
-    for intent in intents_data["intents"]:
-        if intent["intent"] == matched_intent:
-            return random.choice(intent["responses"])
+    if matched_intent in responses_map:
+        return random.choice(responses_map[matched_intent])
     
     return "Sorry, I didn't understand that."
 
-# Create Gradio interface
-with gr.Blocks(title="🎓 Ask Dedan - Chatbot", theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🎓 Ask Dedan - Chatbot")
-    gr.Markdown("Ask me anything about university services!")
-    
-    chatbot = gr.Chatbot(label="Conversation")
-    msg = gr.Textbox(label="Your message")
-    clear = gr.Button("Clear")
-    
-    def respond(message, chat_history):
-        bot_message = get_bot_response(message, chat_history)
-        chat_history.append((message, bot_message))
+# Function to handle chat
+def chat(message, chat_history):
+    if message.strip() == "":
         return "", chat_history
     
-    msg.submit(respond, [msg, chatbot], [msg, chatbot])
-    clear.click(lambda: None, None, chatbot, queue=False)
+    bot_response = get_bot_response(message)
+    chat_history.append((message, bot_response))
+    return "", chat_history
 
-# Launch the app
+# Create the Gradio interface
+with gr.Blocks(title="🎓 DeKUT University Chatbot", theme="soft") as demo:
+    gr.Markdown("# 🎓 DeKUT University Chatbot")
+    gr.Markdown("Ask me anything about Dedan Kimathi University of Technology!)
+    
+    chatbot = gr.Chatbot(label="Conversation", height=400)
+    
+    with gr.Row():
+        msg = gr.Textbox(
+            label="Type your message here...",
+            placeholder="Ask me anything about the university...",
+            lines=1,
+            max_lines=3,
+            scale=4,
+            container=False
+        )
+        submit_btn = gr.Button("Submit", variant="primary", scale=1)
+    
+    with gr.Row():
+        clear_btn = gr.Button("Clear Chat", variant="secondary")
+    
+    # Handle Enter key press
+    msg.submit(
+        fn=chat,
+        inputs=[msg, chatbot],
+        outputs=[msg, chatbot]
+    )
+    
+    # Handle Submit button click
+    submit_btn.click(
+        fn=chat,
+        inputs=[msg, chatbot],
+        outputs=[msg, chatbot]
+    )
+    
+    # Clear chat function
+    def clear_chat():
+        return []
+    
+    clear_btn.click(
+        fn=clear_chat,
+        inputs=[],
+        outputs=chatbot
+    )
+
 if __name__ == "__main__":
     demo.launch()

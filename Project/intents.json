@@ -7,7 +7,7 @@
        "How are you?",
        "Is anyone there?",
        "Hello",
-       "Good day",
+       "hey",
        "What's up",
        "how are ya",
        "heyy",
@@ -15,8 +15,9 @@
        "??? ??? ??"
     ],
     "responses": [
-       "Hello!",
-       "Good to see you again!",
+      "Hi there!👋 Ask me anything about DeKUT.",
+       "Hello !👋 How can I assist you today?",
+       "Good to see you again! What would you like to know?",
        "Hi there, how can I help?"
     ],
     "extension":  {
@@ -45,13 +46,16 @@
        "Have a Good day",
        "talk to you later",
        "ttyl",
+       "Good day",
        "i got to go",
        "gtg"
     ],
     "responses": [
        "Sad to see you go :(",
        "Talk to you later",
-       "Goodbye!",
+       "Goodbye! 👋 Come back anytime you need help.",
+       "Goodbye! 👋 ",
+       "See you later, and all the best with your studies!",
        "Come back soon"
     ],
     "extension":  {
@@ -88,7 +92,7 @@
        "who designed you"
     ],
     "responses": [
-       "Cheryl Achieng"
+        "I am created by Cheryl Achieng as part of a DeKUT project. 💻✨"
     ],
     "extension":  {
         "function": "",
@@ -121,10 +125,9 @@
        "what are you"
     ],
     "responses": [
-       "You can call me Dekut chat.",
-       "I'm dekut chat",
-       "I am a Chatbot.",
-       "I am your helper"
+       "You can call me Dekut chatbot.",
+       "I'm Dekut chat",
+       "I am a Chatbot."
     ],
     "extension":  {
         "function": "",
@@ -161,7 +164,7 @@
        "timing college"
     ],
     "responses": [
-       "Dedan kimathi university of technology  is open 8am-5pm Monday-Friday!"
+       "Dedan kimathi university of technology operates from Monday to Friday ,8AM -5PM . Offices are usually closed on weekends and public holidays."
     ],
     "extension":  {
         "function": "",
@@ -196,7 +199,7 @@
        "call"
     ],
     "responses": [
-       "You can contact at: 0798400005"
+       "You can reach DeKUT at 0721206030."
     ],
     "extension":  {
         "function": "",
